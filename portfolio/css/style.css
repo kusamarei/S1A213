@@ -1,5 +1,7 @@
 body {
-  font-family: "Montserrat","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+font-family: 'Dela Gothic One', cursive;
+font-family: 'Hachi Maru Pop', cursive;
+font-family: 'Kaisei Decol', serif;
   font-size: 14px;
   line-height: 1.8;
   letter-spacing: .8px;
@@ -73,19 +75,21 @@ li {
 /*--------------------------------
 ヘッダー
 ---------------------------------*/
+
+
 .header {
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 1000;
   width: 100%;
-  background-color: #fff;
-  box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
+  background-color: rgba(255,255,255,0.8);
+  box-shadow: 0 5px 10px -6px rgba(57, 21, 189, 0.8);
 }
 
 .header .inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between;   
   padding: 20px 40px;
 }
 
@@ -100,7 +104,7 @@ li {
 .header-logo a {
   color: #333;
 }
-
+  
 .header-nav-list {
   display: flex;
   justify-content: space-between;
@@ -112,30 +116,37 @@ li {
 
 .header-nav-item a {
   position: relative;
-  font-size: 13px;
-  font-weight: bold;
+  /* font-size: 13px;
+  font-weight: bold; */
   display: inline-block;
-  padding: 5px 0;
+  text-decoration: none;
+  /* padding: 5px 0;
   transition: .3s;
-  letter-spacing: .05em;
-  color: #333;
+  letter-spacing: .05em; */
+  color: #333; 
 }
 .header-nav-item a:after {
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 3px;
+  bottom: 2px;
+  left: 0;
   content: "";
+  width:100%;
+  height: 1.2px;
+  background: #333;
+  opacity: 0;
+  visibility: hidden;
   transition: .3s;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  background-color: #333;
+  /* -webkit-transform: translateX(-50%); */
+  /* transform: translateX(-50%); */
+  background-color: rgb(87, 85, 85);
 }
 
 .header-nav-item a:hover:after {
-  width: 100%;
-}
+  /* width: 100%; */
+  bottom: -1px;
+  opacity: 1;
+  visibility: visible;
+} 
 
 /*--------------------------------
  メインビジュアル
@@ -211,14 +222,14 @@ li {
   display: inline-block;
   max-width: 180px;
   text-align: center;
-  background-color: #293b6a;
+  background-color: #87a4ec;
   font-size: 16px;
   color: #FFF;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 16px;
   border: 1px dashed #FFF;
-  box-shadow: 0px 0px 0px 2px #293b6a;/* box-shadowで外枠を */
+  box-shadow: 0px 0px 0px 2px #6283d6;/* box-shadowで外枠を */
 }
 
 .btn-denim:hover {
@@ -230,13 +241,13 @@ li {
   max-width: 180px;
   height:50px;
   text-align: center;
-  background-color: #9ec34b;
+  background-color: #c19fe7;
   font-size: 16px;
   line-height: 52px;
   color: #FFF;
   text-decoration: none;
   font-weight: bold;
-  border: 2px solid #9ec34b;
+  border: 2px solid #753ea1;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -255,7 +266,7 @@ li {
   z-index: -1;
 }
 .btn-open:hover{
-  color: #9ec34b;
+  color: #4d4bc3;
 }
 .btn-open:hover:after{
   height: 240%;
@@ -271,18 +282,19 @@ li {
   max-width: 180px;
   text-align: center;
   font-size: 16px;
-  color: #9ec34b;
+  color: #a74bc3;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 16px;
   position: relative;
-  border: 2px solid #9ec34b;
+  border: 2px solid #794bc3;
   transition: .4s;
+  border-radius: 10px;
 }
 
 .btn-box:hover {
   border: 2px solid transparent;
-  color: #000;
+  color: rgb(119, 119, 119);
 }
 
 .btn-box:before, .btn-box:after {
@@ -299,14 +311,14 @@ li {
 }
 
 .btn-box:before {
-  border-bottom: 2px solid #000;
-  border-left: 2px solid #000;
+  border-bottom: 2px solid rgb(119, 119, 119);
+  border-left: 2px solid rgb(119, 119, 119);
   transform-origin: 100% 0%;
 }
 
 .btn-box:after {
-  border-top: 2px solid #000;
-  border-right: 2px solid #000;
+  border-top: 2px solid rgb(119, 119, 119);
+  border-right: 2px solid rgb(119, 119, 119);
   transform-origin: 0% 100%;
 }
 
@@ -324,8 +336,8 @@ li {
   text-decoration: none;
   font-weight: bold;
   padding: 12px 24px;
-  border-radius: 4px;
-  background-image: linear-gradient(-90deg, #89eb75, #f1e753);
+  border-radius: 10px;
+  background-image: linear-gradient(-90deg, #bd53d8, #5665ec);
   transition: .5s;
   background-size: 200%;
 }
