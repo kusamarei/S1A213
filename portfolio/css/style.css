@@ -21,6 +21,8 @@ img {
   border-style: none;
 }
 
+
+
 ul,
 li {
   list-style: none;
@@ -337,7 +339,7 @@ li {
   font-weight: bold;
   padding: 12px 24px;
   border-radius: 10px;
-  background-image: linear-gradient(-90deg, #bd53d8, #5665ec);
+  background-image: linear-gradient(-90deg, #bd53d8, #a7b0fd);
   transition: .5s;
   background-size: 200%;
 }
@@ -606,6 +608,8 @@ li {
   .skill-item:last-child {
     margin-bottom: 0;
   }
+
+
 
   /* About */
   .profile {
