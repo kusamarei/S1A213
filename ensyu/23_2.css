@@ -22,7 +22,7 @@ dl {
     font-size: 16px;
 }
 
-.fontItem {
+.formItem {
     display: flex;
     margin-bottom: 2em;
     align-items: center;
@@ -79,7 +79,7 @@ input[type="submit"] {
 }
 
 @media screen and (max-width:768px) {
-    .fontItem {
+    .formItem {
         display: block;
     }
 
