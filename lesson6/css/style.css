@@ -153,6 +153,16 @@ address {
   margin-bottom: 10px;
 }
 
+.pagetop{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+
+
+
 /* フォト */
 .photos {
   width: 750px;
@@ -168,8 +178,6 @@ address {
   width: 600px;
   /* アクセス全体の横幅 */
 }
-
-
 
 /* アクセス 左右横並び */
 .access-row {
@@ -222,7 +230,7 @@ address {
 /* フッターロゴ（左側） */
 .footer-logo {
   /* フレックスアイテムへの指定 */
-  flex: 0 1 auto;
+  flex: 0 1 200px;
   max-width: 200px;
   margin: 0;
 }
@@ -275,5 +283,50 @@ address {
 /* YouTube・Google MAPのサイズ */
 
 /* トップ画像をスライド */
+/*スライド*/
+.slide {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.slide img {
+  width: inherit;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+@keyframes slide-4{
+  0% {margin-left: 0;}
+  33% {margin-left: -100%;}
+  66%{margin-left: -200%;}
+  100%{margin-left: -300%;}
+}
 
+.slide > :first-child{
+  animation-name: slide-4;
+  animation-duration: 40s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+}
 /* トップに戻るボタンを右下に固定 */
+.pagetop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+/* マーカー　*/
+.menu-list li {
+  list-style: none;
+}
+
+.menu-list li ::before{
+  content:'';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background-image: url(../img/menu_li.png);
+  background-size: contain;
+  vertical-align: middle;
+}

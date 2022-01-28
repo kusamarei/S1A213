@@ -25,9 +25,12 @@
   </header>
 
   <!-- <main>の中身をマークアップ -->
-  <main>
-    <figure>
-      <img src="img/top.jpg" alt="Cornettoのパン">
+  <main class="main">
+    <figure class="top center slide" id="top">
+      <img src="img/top_01.jpg" alt="Clrnettoのパン1">
+      <img src="img/top_02.jpg" alt="Clrnettoのパン2">
+      <img src="img/top_03.jpg" alt="Clrnettoのパン3">
+      <img src="img/top_01.jpg" alt="Clrnettoのパン1">
     </figure>
 
     <nav class="nav">
@@ -90,8 +93,8 @@
       </ul>
     </section>
 
-    <section  class="section access" id="access">
-      <h2>
+    <section class="section access" id="access">
+      <h2 class="heading">
         <img src="img/ttl_access.svg" alt="acess">
       </h2>
       <div class="access-row">
@@ -108,9 +111,12 @@
     </section>
   </main>
 
+  <a href="#top"><img class="pagetop" src="img/pagetop.png" alt="ページトップに戻る" width="60" height="60" ></a>
   <footer class="footer">
     <div class="footer-container">
-      <p class="footer-logo"><img src="img/logo_w.svg"></p>
+      <p class="footer-logo">
+        <img src="img/logo_w.svg">
+      </p>
       <div class="footer-body">
         <nav class="footer-nav">
           <ul class="footer-nav-list">
@@ -120,7 +126,7 @@
             <li><a href="#acces">acces</a></li>
           </ul>
         </nav>
-        <p><small>&copy;Copyright 2019 MdN Corporation.</small></p>
+        <p class="copyright"><small>&copy;Copyright 2019 MdN Corporation.</small></p>
       </div>
     </div>
   </footer>
