@@ -148,10 +148,7 @@ address {
   text-align: left;
 }
 
-.menu-list li {
-  /* 下のマージン */
-  margin-bottom: 10px;
-}
+
 
 .pagetop{
   position: fixed;
@@ -317,10 +314,11 @@ address {
 }
 /* マーカー　*/
 .menu-list li {
+  margin-bottom: 10px;
   list-style: none;
 }
 
-.menu-list li ::before{
+.menu-list li::before{
   content:'';
   display: inline-block;
   width: 16px;
